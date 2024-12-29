@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|c:\\users\\yigit\\source\\repos\\matesmate\\matesmate.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|solutionrelative:matesmate.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|c:\\users\\yigit\\source\\repos\\matesmate\\matesmate.server\\matesmate.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|solutionrelative:matesmate.server\\matesmate.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|c:\\users\\yigit\\source\\repos\\matesmate\\matesmate.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|solutionrelative:matesmate.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32867AD8-59B9-4DDC-AEFB-0F7775996ABF}|matesmate.client\\matesmate.client.esproj|c:\\users\\yigit\\source\\repos\\matesmate\\matesmate.client\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{32867AD8-59B9-4DDC-AEFB-0F7775996ABF}|matesmate.client\\matesmate.client.esproj|solutionrelative:matesmate.client\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 216,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MatesMate.Server.http",
+              "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\MatesMate.Server.http",
+              "RelativeDocumentMoniker": "MatesMate.Server\\MatesMate.Server.http",
+              "ToolTip": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\MatesMate.Server.http",
+              "RelativeToolTip": "MatesMate.Server\\MatesMate.Server.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-12-29T18:23:21.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\Program.cs",
+              "RelativeDocumentMoniker": "MatesMate.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\Program.cs",
+              "RelativeToolTip": "MatesMate.Server\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T18:23:20.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MatesMate.Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MatesMate.Server\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-29T18:23:10.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "app.component.ts",
+              "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\matesmate.client\\src\\app\\app.component.ts",
+              "RelativeDocumentMoniker": "matesmate.client\\src\\app\\app.component.ts",
+              "ToolTip": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\matesmate.client\\src\\app\\app.component.ts",
+              "RelativeToolTip": "matesmate.client\\src\\app\\app.component.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-29T17:32:57.739Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

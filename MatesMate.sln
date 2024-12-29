@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatesMate.Server", "MatesMate.Server\MatesMate.Server.csproj", "{D7416CA3-5EBB-4080-A206-7DC87F3173A6}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "matesmate.client", "matesmate.client\matesmate.client.esproj", "{32867AD8-59B9-4DDC-AEFB-0F7775996ABF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7416CA3-5EBB-4080-A206-7DC87F3173A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7416CA3-5EBB-4080-A206-7DC87F3173A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7416CA3-5EBB-4080-A206-7DC87F3173A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7416CA3-5EBB-4080-A206-7DC87F3173A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32867AD8-59B9-4DDC-AEFB-0F7775996ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32867AD8-59B9-4DDC-AEFB-0F7775996ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32867AD8-59B9-4DDC-AEFB-0F7775996ABF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{32867AD8-59B9-4DDC-AEFB-0F7775996ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32867AD8-59B9-4DDC-AEFB-0F7775996ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32867AD8-59B9-4DDC-AEFB-0F7775996ABF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08BE2D35-6403-46BA-A51E-96C4727EDE22}
+	EndGlobalSection
+EndGlobal
