@@ -1,0 +1,56 @@
+.navbar {
+  width: 100%;
+}
+
+.navbar-brand {
+  font-weight: bolder;
+  color: #c0ffbd;
+}
+
+.navbar-nav .nav-link {
+  color: #c0ffbd;
+}
+
+.navBrand {
+  color: #c0ffbd;
+}
+
+.navItem span {
+  color: #c0ffbd;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 800px;
+}
+
+.startButton div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.startButton div i {
+  margin-right: 10px;
+}
+
+.startButton {
+  background-color: #0b582a;
+  border-color: rgb(255, 255, 255);
+  border: #ffffff50 solid 1px;
+  border-radius: 100px;
+  color: #c0ffbd;
+  font-weight: 400;
+  padding: 7px 25px;
+  margin-right: 10px;
+  font-size: 15px;
+  display: flex;
+}
+
+.startButton:hover {
+  background-color: #094a23;
+}
+
+.startButton:active {
+  background-color: #083b1c;
+}

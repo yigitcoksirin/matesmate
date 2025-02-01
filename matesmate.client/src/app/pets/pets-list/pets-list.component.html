@@ -1,0 +1,10 @@
+<div class="pet-list">
+    <div *ngFor="let pet of pets" class="pet-item">
+      <img [src]="pet.imageUrl" alt="{{ pet.name }}">
+      <h3>{{ pet.name }}</h3>
+      <p>{{ pet.description }}</p>
+      <p><strong>Age:</strong> {{ pet.age }}</p>
+      <p><strong>Species:</strong> {{ pet.species }}</p>
+      <p><strong>Breeds: {{ pet.breeds[0] }}</strong></p>
+    </div>
+  </div>

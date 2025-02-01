@@ -1,40 +1,23 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-success">
-  <div class="container-fluid">
-      <a routerLink="['/']" class="navbar-brand mx-3" style="font-weight:bolder; color:#c0ffbd;"><span class="navBrand">MM</span></a>
-      <button class="navbar-toggler bg-secondary" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-          <span class="navbar-toggler-icon bg-secondary"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color:#c0ffbd;">
-              <li class="nav-item">
-                  <a [routerLink]="['/']" class="nav-link" style="color:#c0ffbd;"><span class="navItem"></span></a>
-              </li>
-              <li class="nav-item">
-                  <a [routerLink]="['/']" class="nav-link" style="color:#c0ffbd;"><span class="navItem">Movies</span></a>
-              </li>
-              <li class="nav-item">
-                  <a [routerLink]="['/']" class="nav-link" style="color:#c0ffbd;"><span class="navItem">Series</span></a>
-              </li>
-              <li class="nav-item">
-                  <a [routerLink]="['/']" class="nav-link" style="color:#c0ffbd;"><span class="navItem">Watchlist</span></a>
-              </li>
-              <li class="nav-item">
-                  <a [routerLink]="['/']" class="nav-link" style="color:#c0ffbd;"><span class="navItem">
-                      Users
-                  </span></a>
-              </li>
-          </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                  <a [routerLink]="['/']" class="nav-link" style="color:#c0ffbd;"><span class="navItem">Login</span></a>
-              </li>
-              <li class="nav-item">
-                  <a [routerLink]="['/']" class="nav-link" style="color:#c0ffbd;"><span class="navItem">Register</span></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" style="cursor: pointer; color:#c0ffbd;"><span class="navItem">Logout</span></a>
-              </li>
-          </ul>
-      </div>
-  </div>
-</nav>
+    <div class="container-fluid">
+        <a routerLink="['/']" class="navbar-brand mx-3 navBrand"><span>MM</span></a>
+        <button class="navbar-toggler bg-secondary" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon bg-secondary"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="d-flex justify-content-center w-100">
+                <input type="text" class="form-control search-bar" placeholder="Search">
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <button class="startButton" [routerLink]="['/login']">
+                        <div>
+                            <i class="fa fa-paw"></i>
+                            Start
+                        </div>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
