@@ -1,13 +1,13 @@
 <h1>Welcome Back!</h1>
 <div class="login-container">
-    <form class="login-form">
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
+    <form #form="ngForm" (ngSubmit)="login(form)" class="login-form">
+        <input type="text" required minlength="5" class="form-control" ngModel name="username" placeholder="Username">
+        <input type="password" required minlength="6" class="form-control" ngModel name="password" placeholder="Password">
         <div class="form-group">
             <input type="checkbox" id="rememberMe">
             <label for="rememberMe">Remember Me</label>
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" [disabled]="form.invalid">Login</button>
         <div class="register-link">
             <a routerLink="/register">Don't have an account? Register</a>
         </div>

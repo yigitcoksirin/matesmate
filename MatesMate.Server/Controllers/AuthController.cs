@@ -46,7 +46,7 @@ namespace MatesMate.Server.Controllers
 
                     if (result.Succeeded)
                     {
-                        return Ok(new { message = "Registration Successful" });
+                        return Ok(new { message = "Registration Successful", success = true });
                     }
                     else
                     {
@@ -55,13 +55,47 @@ namespace MatesMate.Server.Controllers
                     }
                 }
             }
-            return BadRequest("Invalid registration details");
+            return BadRequest(new { message = "Invalid registration details", success = false });
         }
 
+        [HttpPost]
+        [Route("login")]
+        public async Task<IActionResult> Login([FromBody] AuthModel authModel)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByNameAsync(authModel.Username);
+                if (user == null)
+                {
+                    return Ok(new { message = "User not found", success = false });
+                }
 
+                var result = await _signInManager.PasswordSignInAsync(user, authModel.Password, false, false);
+
+                if (result.Succeeded)
+                {
+                    return Ok(new { message = "Login Successful", success = true });
+                }
+                return Ok(new { message = "Incorrect credentials", success = false });
+
+            }
+            return BadRequest(new { message = "Login Failed", success = false });
+        }
 
         [HttpPost]
-        [Route("get-token")]
+        [Route("check-session")]
+        public async Task<IActionResult> CheckSession([FromBody] String username)
+        {
+            var user = await _userManager.FindByNameAsync(username);
+            if (user.RefreshTokenExpiryTime < DateTime.UtcNow)
+            {
+                return Ok(new {message = "Session is invalid", success = false });
+            }
+            return Ok(new {message = "Session is valid", success = true });
+        }
+
+        [HttpPost]
+        [Route("access-token")]
         public async Task<IActionResult> GetToken([FromBody] AuthModel authModel)
         {
             var user = await _userManager.FindByNameAsync(authModel.Username);
@@ -121,7 +155,7 @@ namespace MatesMate.Server.Controllers
                     Expires = DateTime.UtcNow.AddMinutes(expiration),
                 };
 
-                Response.Cookies.Append("authToken" ,jwtToken, cookieOptions);
+                Response.Cookies.Append("accessToken" ,jwtToken, cookieOptions);
 
                 return Ok(new
                 { 
@@ -140,7 +174,7 @@ namespace MatesMate.Server.Controllers
 
             if (user == null || user.RefreshTokenExpiryTime < DateTime.UtcNow)
             {
-                return Unauthorized(new { message = "Invalid or expired refresh token" });
+                return Unauthorized(new { message = "Invalid or expired refresh token", success = false });
             }
 
             var jwtSettings = _configuration.GetSection("Token");
@@ -191,7 +225,7 @@ namespace MatesMate.Server.Controllers
                 Expires = DateTime.UtcNow.AddMinutes(expiration),
             };
 
-            Response.Cookies.Append("authToken", newJwtToken, cookieOptions);
+            Response.Cookies.Append("accessToken", newJwtToken, cookieOptions);
 
             var refreshCookieOptions = new CookieOptions
             {

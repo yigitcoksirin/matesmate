@@ -77,11 +77,21 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularDev", builder =>
+    {
+        builder.WithOrigins("https://localhost:4200")
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
 
 var app = builder.Build();
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
+app.UseCors("AllowAngularDev");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
