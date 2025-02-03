@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|solutionrelative:matesmate.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|c:\\users\\yigit\\source\\repos\\matesmate\\matesmate.server\\models\\authmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|solutionrelative:matesmate.server\\models\\authmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|c:\\users\\yigit\\source\\repos\\matesmate\\matesmate.server\\models\\checksession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|solutionrelative:matesmate.server\\models\\checksession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|c:\\users\\yigit\\source\\repos\\matesmate\\matesmate.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|solutionrelative:matesmate.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|c:\\users\\yigit\\source\\repos\\matesmate\\matesmate.server\\models\\authmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|solutionrelative:matesmate.server\\models\\authmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D7416CA3-5EBB-4080-A206-7DC87F3173A6}|MatesMate.Server\\MatesMate.Server.csproj|c:\\users\\yigit\\source\\repos\\matesmate\\matesmate.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -66,11 +70,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 216,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckSession.cs",
+              "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\Models\\CheckSession.cs",
+              "RelativeDocumentMoniker": "MatesMate.Server\\Models\\CheckSession.cs",
+              "ToolTip": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\Models\\CheckSession.cs",
+              "RelativeToolTip": "MatesMate.Server\\Models\\CheckSession.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T15:10:14.851Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -80,27 +97,14 @@
               "RelativeDocumentMoniker": "MatesMate.Server\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\Controllers\\AuthController.cs",
               "RelativeToolTip": "MatesMate.Server\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAF0AAAAnAAAA",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAuwNQAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-30T14:58:02.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\appsettings.json",
-              "RelativeDocumentMoniker": "MatesMate.Server\\appsettings.json",
-              "ToolTip": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\appsettings.json",
-              "RelativeToolTip": "MatesMate.Server\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-29T16:32:22.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\Identity\\User.cs",
               "RelativeDocumentMoniker": "MatesMate.Server\\Identity\\User.cs",
@@ -108,12 +112,11 @@
               "RelativeToolTip": "MatesMate.Server\\Identity\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T16:28:07.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T16:28:07.039Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\Identity\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "MatesMate.Server\\Identity\\ApplicationContext.cs",
@@ -121,12 +124,11 @@
               "RelativeToolTip": "MatesMate.Server\\Identity\\ApplicationContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T16:27:58.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T16:27:58.638Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MMContext.cs",
               "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\DataAccess\\Concrete\\EfCore\\MMContext.cs",
               "RelativeDocumentMoniker": "DataAccess\\Concrete\\EfCore\\MMContext.cs",
@@ -134,12 +136,11 @@
               "RelativeToolTip": "DataAccess\\Concrete\\EfCore\\MMContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T16:21:39.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T16:21:39.96Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MatesMate.Server.http",
               "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\MatesMate.Server.http",
               "RelativeDocumentMoniker": "MatesMate.Server\\MatesMate.Server.http",
@@ -147,12 +148,11 @@
               "RelativeToolTip": "MatesMate.Server\\MatesMate.Server.http",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-12-29T18:23:21.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-29T18:23:21.774Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "MatesMate.Server\\Properties\\launchSettings.json",
@@ -160,8 +160,7 @@
               "RelativeToolTip": "MatesMate.Server\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-29T18:23:10.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-29T18:23:10.76Z"
             },
             {
               "$type": "Document",
@@ -171,14 +170,14 @@
               "RelativeDocumentMoniker": "MatesMate.Server\\Program.cs",
               "ToolTip": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\Program.cs",
               "RelativeToolTip": "MatesMate.Server\\Program.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAQwFcAAAADAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAwBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-29T18:23:20.904Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AuthModel.cs",
               "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\Models\\AuthModel.cs",
               "RelativeDocumentMoniker": "MatesMate.Server\\Models\\AuthModel.cs",
@@ -192,6 +191,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "MatesMate.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\appsettings.json",
+              "RelativeToolTip": "MatesMate.Server\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-29T16:32:22.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Methods.cs",
               "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\ExtraMethods\\Methods.cs",
               "RelativeDocumentMoniker": "MatesMate.Server\\ExtraMethods\\Methods.cs",
@@ -199,12 +210,11 @@
               "RelativeToolTip": "MatesMate.Server\\ExtraMethods\\Methods.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:02:18.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T11:02:18.355Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "IMethods.cs",
               "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\MatesMate.Server\\ExtraMethods\\IMethods.cs",
               "RelativeDocumentMoniker": "MatesMate.Server\\ExtraMethods\\IMethods.cs",
@@ -212,12 +222,11 @@
               "RelativeToolTip": "MatesMate.Server\\ExtraMethods\\IMethods.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:02:48.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T11:02:48.223Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\DataAccess\\Abstract\\IRepository.cs",
               "RelativeDocumentMoniker": "DataAccess\\Abstract\\IRepository.cs",
@@ -225,12 +234,11 @@
               "RelativeToolTip": "DataAccess\\Abstract\\IRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T16:36:52.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T16:36:52.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "EfCoreGenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\DataAccess\\Concrete\\EfCore\\EfCoreGenericRepository.cs",
               "RelativeDocumentMoniker": "DataAccess\\Concrete\\EfCore\\EfCoreGenericRepository.cs",
@@ -238,12 +246,11 @@
               "RelativeToolTip": "DataAccess\\Concrete\\EfCore\\EfCoreGenericRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T16:37:10.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T16:37:10.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "app.component.ts",
               "DocumentMoniker": "C:\\Users\\Yigit\\source\\repos\\MatesMate\\matesmate.client\\src\\app\\app.component.ts",
               "RelativeDocumentMoniker": "matesmate.client\\src\\app\\app.component.ts",
@@ -251,8 +258,7 @@
               "RelativeToolTip": "matesmate.client\\src\\app\\app.component.ts",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-12-29T17:32:57.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-29T17:32:57.739Z"
             }
           ]
         }

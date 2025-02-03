@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { VisibilityService } from '../../services/visibility.service';
 import { NgForm } from '@angular/forms';
 import { AuthService } from '../auth.service';
-import { catchError, throwError } from 'rxjs';
+import { catchError, of, switchMap, throwError,tap } from 'rxjs';
 
 @Component({
   selector: 'login',
@@ -14,8 +14,10 @@ export class LoginComponent implements OnInit, OnDestroy {
   constructor(private visibilityService:VisibilityService, private authService:AuthService) {}
 
   ngOnInit():void {
+
+    //stylings
     this.visibilityService.setShowNavbarSidebar(false);
-    document.body.style.background = 'linear-gradient(to bottom,rgb(141, 255, 121),rgb(255, 255, 255))'; // Set gradient background
+    document.body.style.background = 'linear-gradient(to bottom,rgb(141, 255, 121),rgb(255, 255, 255))';
     document.documentElement.style.height = '100%';
     document.body.style.height = '100%';
     document.body.style.margin = '0';
@@ -38,28 +40,37 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
 
-  //burayı düzelt, nested subscribe olmamalı
   login(form:NgForm):void {
     const username = form.value.username;
     const password = form.value.password
-    this.authService.login(username, password).pipe(catchError(error => {
-      console.log(error);
-      return throwError(() => error);
-    })
-  ).subscribe(response => {
-    if(response.success){
-      console.log('Login successful');
-      this.authService.checkSession(username).pipe(catchError(error => {
-        console.log(error);
-        return throwError(() => error);
-      })
-    ).subscribe(sessionResponse => {
-      console.log(sessionResponse);
-    });
-    } else {
-      console.log('Login failed');
-    }
-  })
-  }
 
+    let loginResponse: any;
+
+    this.authService.login(username, password).pipe(
+      tap(response => {
+        loginResponse = response; 
+      }),
+      switchMap(response => {
+        console.log(response.message);
+        if(response.success){
+          return this.authService.renewRefreshToken();
+        } else {
+          return throwError(() => new Error("Login failed"));
+        }
+      }),
+      catchError(error => {
+        console.error("Error:", error);
+        return of(null);
+      })
+    ).subscribe(response => {
+      if(response.success){
+        console.log('refresh token is valid, renewed.');
+      } else {
+        console.log('refresh token is invalid, creating a new access token');
+        this.authService.getAccessToken(username, password).subscribe(accessTokenResponse => {
+          console.log('new token created');
+        });
+      }
+    });
+  }
 }

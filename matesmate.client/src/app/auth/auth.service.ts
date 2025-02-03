@@ -26,15 +26,10 @@ export class AuthService {
   }
 
   getAccessToken(username:string, password:string){
-    return this.http.post<any>(this.url + 'access-token', {
-      username:username,
-      password:password
-    });
+    return this.http.post<any>(this.url + 'access-token', {username:username,password:password}, {withCredentials:true});
   }
 
-  renewRefreshToken(refreshToken:string){
-    return this.http.post<any>(this.url + 'refresh-token', {
-      refreshToken:refreshToken
-    });
+  renewRefreshToken(){
+    return this.http.post<any>(this.url + 'refresh-token', {}, {withCredentials:true});
   }
 }

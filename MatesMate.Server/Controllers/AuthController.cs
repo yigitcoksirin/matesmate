@@ -84,16 +84,24 @@ namespace MatesMate.Server.Controllers
 
         [HttpPost]
         [Route("check-session")]
-        public async Task<IActionResult> CheckSession([FromBody] String username)
+        public async Task<IActionResult> CheckSession([FromBody] CheckSession request)
         {
-            var user = await _userManager.FindByNameAsync(username);
-            if (user.RefreshTokenExpiryTime < DateTime.UtcNow)
+            if (!Request.Cookies.TryGetValue("refreshToken", out var refreshToken))
+            {
+                return Ok(new { message = "Invalid or expired refresh token", success = false });
+            }
+
+            var user = await _userManager.FindByNameAsync(request.Username);
+            if (user.RefreshTokenExpiryTime < DateTime.UtcNow || user.RefreshToken == null)
             {
                 return Ok(new {message = "Session is invalid", success = false });
             }
             return Ok(new {message = "Session is valid", success = true });
         }
 
+
+
+        //create access token and refresh token when user logs in, also creates cookies
         [HttpPost]
         [Route("access-token")]
         public async Task<IActionResult> GetToken([FromBody] AuthModel authModel)
@@ -157,25 +165,39 @@ namespace MatesMate.Server.Controllers
 
                 Response.Cookies.Append("accessToken" ,jwtToken, cookieOptions);
 
+                var refreshCookieOptions = new CookieOptions
+                {
+                    HttpOnly = true,
+                    Secure = true,
+                    SameSite = SameSiteMode.Strict,
+                    Expires = user.RefreshTokenExpiryTime,
+                };
+
+                Response.Cookies.Append("refreshToken", refreshToken, refreshCookieOptions);
+
                 return Ok(new
                 { 
                     token = jwtToken,
                     refreshToken = refreshToken,
+                    success = true,
+
                 });
             }
             return Unauthorized();
         }
 
+
+        //renews the refreshToken
         [HttpPost]
         [Route("refresh-token")]
-        public async Task<IActionResult> RefreshToken([FromBody] string refreshToken)
+        public async Task<IActionResult> RefreshToken()
         {
-            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.RefreshToken == refreshToken);
-
-            if (user == null || user.RefreshTokenExpiryTime < DateTime.UtcNow)
+            if (!Request.Cookies.TryGetValue("refreshToken", out var refreshToken))
             {
-                return Unauthorized(new { message = "Invalid or expired refresh token", success = false });
+                return Ok(new { message = "Invalid or expired refresh token", success = false });
             }
+
+            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.RefreshToken == refreshToken);
 
             var jwtSettings = _configuration.GetSection("Token");
             var secretKey = jwtSettings.GetValue<string>("SecurityKey");
@@ -232,7 +254,7 @@ namespace MatesMate.Server.Controllers
                 HttpOnly = true,
                 Secure = true,
                 SameSite = SameSiteMode.Strict,
-                Expires = DateTime.UtcNow.AddDays(7),
+                Expires = user.RefreshTokenExpiryTime,
             };
 
             Response.Cookies.Append("refreshToken", newRefreshToken, refreshCookieOptions);
@@ -240,7 +262,8 @@ namespace MatesMate.Server.Controllers
             return Ok(new
             {
                 token = newJwtToken,
-                refreshToken = newRefreshToken
+                refreshToken = newRefreshToken,
+                success = true,
             });
         }
 
